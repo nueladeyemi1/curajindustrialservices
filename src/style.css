@@ -1,0 +1,8 @@
+#root {
+  padding: 10px;
+}
+
+.trial {
+  display: flex;
+  justify-content: center;
+}
