@@ -2,16 +2,18 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import Certificates from "./Certificates";
 import { certificatedetails } from "./certificatedetails";
-import NavbarComponent from "./NavbarComponent";
+// import NavbarComponent from "./NavbarComponent";
+
 import "./index.css";
+import App from "./App";
 
 function Main() {
   return (
     <section>
-      <NavbarComponent />
+      {/* <App /> */}
       <section className="certificates">
         {certificatedetails.map((describe) => {
-          return <Certificates {...describe} />;
+          return <Certificates key={describe.id} {...describe} />;
         })}
       </section>
       <section className="services">
